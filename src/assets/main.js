@@ -14,3 +14,12 @@ async function getVideos(urlAPI) {
     return data;
 }
 
+(async () => {
+//se llamara asi misma
+   try{
+        const videos = await getVideos(API);
+   }
+   catch{
+         console.log('error')
+   }
+})();
