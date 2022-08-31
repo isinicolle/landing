@@ -1,3 +1,5 @@
+const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCV6ZDSDfPyXNvHbM8YGvv8w&part=snippet%2Cid&order=date&maxResults=10'
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -6,7 +8,8 @@ const options = {
 	}
 };
 
-fetch('https://youtube-v31.p.rapidapi.com/search?channelId=UCV6ZDSDfPyXNvHbM8YGvv8w&part=snippet%2Cid&order=date&maxResults=10', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+async function getVideos() {
+    const response = await fetch(API, options);
+    const data = await response.json();
+    return data;
+}
