@@ -1,6 +1,6 @@
-# landing page de Isis Zapata
+# Landing page de Isis Zapata
 
-[Ver proyecto aqui](https://isinicolle.github.io/landing/)
+## [👉🏻Ver proyecto aqui](https://isinicolle.github.io/landing/)
 
 # Imagen del proyecto
 
