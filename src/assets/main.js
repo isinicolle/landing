@@ -8,8 +8,9 @@ const options = {
 	}
 };
 
-async function getVideos() {
-    const response = await fetch(API, options);
+async function getVideos(urlAPI) {
+    const response = await fetch(urlAPI, options);
     const data = await response.json();
     return data;
 }
+
